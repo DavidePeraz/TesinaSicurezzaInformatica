@@ -1,0 +1,32 @@
+# Ambiente virtuale (pesante, si ricrea dai requirements)
+.venv/
+
+# Cache di Python
+__pycache__/
+*.py[cod]
+
+# Database generato (si rigenera con bersagli/crea_database.py)
+bersagli/dati.db
+
+# Log transitori scritti nella root durante i run degli agenti
+/*.log
+scratch_*.log
+
+# File temporanei di editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Cartella di configurazione locale dell'assistente
+.claude/
+
+# NB: le chiavi API NON sono in nessun file (si passano via variabile
+# d'ambiente OPENROUTER_API_KEY), quindi non c'e' nulla da ignorare qui.
+# I log conservati in risultati/ vengono invece versionati.
+
+# File che contiene la API key in chiaro: NON deve mai finire su GitHub
+README.txt
+.env
+*.key
+secrets*
