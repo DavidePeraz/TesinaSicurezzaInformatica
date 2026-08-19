@@ -15,3 +15,8 @@ MODELLO = "cognitivecomputations/dolphin-mistral-24b-venice-edition"
 
 # Endpoint OpenRouter (compatibile con l'API di OpenAI).
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
+# --- LM Studio (modello locale) ---------------------------------------------
+# Server locale compatibile con l'API di OpenAI (LM Studio -> "Local Model API").
+# Il modello viene rilevato automaticamente dall'agente, non serve indicarlo qui.
+LMSTUDIO_BASE_URL = "http://localhost:1234/v1"
